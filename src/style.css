@@ -1,0 +1,123 @@
+/* RESET & BASICS */
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --accent-color: #646cff; /* Indigo specific to Vite, nice and modern */
+  --secondary-color: #535bf2;
+  --nav-bg: #242424;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* LAYOUT UTILS */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* NAVIGATION */
+.navbar {
+  background-color: var(--nav-bg);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #333;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* The Wiki Link gets special treatment */
+.special-link {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+  padding-top: 8rem;
+  text-align: left;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+/* BUTTONS */
+.cta-group {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 1.6em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: border-color 0.25s;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid #444;
+  color: #ccc;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+}
