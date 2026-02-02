@@ -115,7 +115,7 @@ h1 {
 }
 
 footer {
-  margin-top: 10rem;
+  margin-top: 6rem;
   padding: 2rem;
   text-align: center;
   color: #666;
@@ -206,4 +206,80 @@ footer {
   color: #aaa;
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+/* SECTIONS */
+.section {
+  padding-top: 6rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+/* CARD GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--nav-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+
+.card p {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* EDUCATION */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-item {
+  background-color: var(--nav-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+}
+
+.education-degree {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.education-school {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.education-year {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
 }
