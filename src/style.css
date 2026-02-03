@@ -252,6 +252,12 @@ footer {
   line-height: 1.6;
 }
 
+.card .collaborators {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
 /* EDUCATION */
 .education-list {
   display: flex;
